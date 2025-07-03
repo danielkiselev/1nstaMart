@@ -17,6 +17,9 @@ sudo apt-get install -y tor nyx
 sudo apt-get install -y vanguards
 
 wget https://dist.torproject.org/tor-0.4.8.1-alpha.tar.gz
+wget https://dist.torproject.org/tor-0.4.8.1-alpha.tar.gz.asc
+gpg --keyserver hkps://keys.openpgp.org --recv-keys 0xD1483FA6C3C07136 || true
+gpg --verify tor-0.4.8.1-alpha.tar.gz.asc tor-0.4.8.1-alpha.tar.gz
 tar -xf tor-0.4.8.1-alpha.tar.gz
 cd tor-0.4.8.1-alpha
 ./configure --enable-gpl && make -j12

@@ -8,6 +8,8 @@ For use on ubuntu 18-22
 
 run.sh to start
 
+Before running, copy `.env` and update the credentials or export the required environment variables.
+
  php8 options will install
 tor 0.4.8.1
 php 8.1 
@@ -26,9 +28,9 @@ a monero wallet named test with a password of ""
 
 a mysql database admin account for the market:
 
-    user = test 
+    user = test
 
-    password = pA3sw0Rd
+    password = <your password>
 
   and a linux user with the name user1, you will enter the passwd in the the script  
 
